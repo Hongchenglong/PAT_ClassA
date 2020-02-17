@@ -1,0 +1,27 @@
+蓝桥杯不支持C++11
+C的scanf和printf 比 C++的cin和cout 快
+
+using namespace std; // 使用std这个名称空间namespace, 否则std::cin >> n;
+
+
+C++的头⽂件⼀般是没有像C语⾔的.h这样的扩展后缀的，⼀般情况下C语⾔⾥⾯的头⽂件去掉.h然后
+在前⾯加个c就可以继续在C++⽂件中使⽤c语⾔头⽂件中
+#include <cstring> // 相当于C语⾔⾥⾯的#include <string.h>
+
+C++特有的const定义常量
+const int maxn = 0x3f3f3f3f;
+
+C++的string类
+string s = s1 + s2;
+⽤cin读⼊字符串的时候，是以空格为分隔符的，如果想要读⼊⼀整⾏的字符串，就需要⽤getline
+getline(cin, s);
+cout << s.length();
+substr，作⽤是截取某个字符串中的⼦串
+string s2 = s.substr(4); // 表示从下标4开始⼀直到结束
+string s3 = s.substr(5, 3); // 表示从下标5开始，3个字符
+
+vector、stack、queue、map、set这些在C++中都叫做容器，这些容器的⼤⼩都可以⽤ .size() 获取
+
+C⽤int arr[]定义数组，它的缺点是数组的⻓度不能随⼼所欲的改变，⽽C++的动态数组vector，它能够在运⾏阶段设置数组的⻓度、在末尾增加新的数据、在中间插⼊新的值、⻓度任意被改变
+
+set是集合，⼀个set⾥⾯的各元素是各不相同的，⽽且set会按照元素进⾏从⼩到⼤排序
