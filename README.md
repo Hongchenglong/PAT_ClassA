@@ -1,1 +1,1 @@
-:> PAT甲级代码 -- hongchenglong
+> 大道至简，知易行难。
